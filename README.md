@@ -15,25 +15,44 @@ To use flashmash, you simply need to feed it eithur 2 or 4 flash memory dumps. T
 >                            [-o OUTPUT] [-p] [-cp]
 >                            input_files [input_files ...]
 >
->Toolkit to smash flash dumps together to find valid data. Default is all 3 bussizes byte order flipped and non flipped.
->        Needs 2 or 4 vaid dumps as arguments.
+>Toolkit to smash flash dumps together to find valid data. Default is all 3 bussizes byte order flipped and non flipped. Needs 2 or 4 vaid dumps as arguments.
 >
 >positional arguments:
->  input_files           input files for parsing. Either 2 or 4 dumps.
 >
->optional arguments:
->  -h, --help            show this help message and exit
->  -b BUSSIZE, --bussize BUSSIZE
->                        Specify the bus size of ONE flash chip IE 8,16,32
->  -f FLIPPED [FLIPPED ...], --flipped FLIPPED [FLIPPED ...]
->                        Flip byte order. DEFAULT = FLIP && NOFLIP.
->  -r, --reverse         Scan input files from end of file. Go in reverse. Useful for backward dumps or flipped busses.
->  -o OUTPUT, --output OUTPUT
->                        To change directory to output data to. Default = MashedFlash/
->  -p, --allpermutations
->                        Produces all permutations of file combinations.
->                        ***WARNING*** 4 input files will produce 48 files!
->  -cp, --noclobber      Will write to incremental directory rather than overwriting current directory
+>   input_files
+>
+>input files for parsing. Either 2 or 4 dumps.
+>
+>   optional arguments:
+>
+>-h, --help
+>
+>   show this help message and exit
+>
+>-b BUSSIZE, --bussize BUSSIZE
+>
+>   Specify the bus size of ONE flash chip IE 8,16,32
+> 
+>-f FLIPPED [FLIPPED ...], --flipped FLIPPED [FLIPPED ...]
+>
+>   Flip byte order. DEFAULT = FLIP && NOFLIP.
+> 
+>-r, --reverse
+>
+>   Scan input files from end of file. Go in reverse. Useful for backward dumps or flipped busses.
+> 
+>-o OUTPUT, --output OUTPUT
+>
+>   To change directory to output data to. Default = MashedFlash/
+> 
+>-p, --allpermutations
+>
+>   Produces all permutations of file combinations.
+>   ***WARNING*** 4 input files will produce 48 files!
+> 
+>-cp, --noclobber
+>
+>   Will write to incremental directory rather than overwriting current directory
 >
 
 ### Examples
